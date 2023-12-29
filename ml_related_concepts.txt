@@ -1,0 +1,32 @@
+Let's explore the impact of using only Ridge Regularization, only Gradient Descent, or both in a machine learning model:
+
+1. Using Only Ridge Regularization:
+Scenario:
+If you set a very high value of alpha in Ridge Regression, it strongly penalizes large coefficients.
+This can lead to an overly simplified model with coefficients pushed towards zero.
+Outcome:
+The model may become too simple and underfit the data.
+It might not capture the underlying patterns in the training data well.
+
+2. Using Only Gradient Descent (Without Regularization):
+Scenario:
+If you perform gradient descent without any regularization term in the cost function.
+The algorithm focuses solely on minimizing the fitting error.
+Outcome:
+There's a risk of overfitting, especially if the model has a large number of features.
+The model might capture noise in the training data and fail to generalize well to new, unseen data.
+
+3. Using Both Ridge Regularization and Gradient Descent:
+Scenario:
+Combining Ridge Regression with gradient descent is a common practice.
+The regularization term is included in the cost function, and gradient descent is used to minimize the combined cost.
+Outcome:
+The regularization term guides the model to avoid overfitting by penalizing large coefficients.
+Gradient descent optimizes the model parameters to minimize both the fitting error and the regularization term.
+This combination helps achieve a balance between fitting the data well and preventing overfitting.
+
+Key Takeaways:
+Regularization's Role: Ridge regularization helps control overfitting and stabilize the model by discouraging overly complex models.
+Gradient Descent's Role: Gradient descent optimizes the model parameters to minimize the overall cost, which includes both the fitting error and the regularization term.
+Balancing Act: The combination of both regularization and gradient descent aims to strike a balance between fitting the data well and preventing overfitting.
+In practice, it's common to use regularization with gradient descent to benefit from both aspects—minimizing fitting error and preventing overfitting. The choice of hyperparameters (like alpha) becomes crucial to finding the right balance for the specific dataset.
