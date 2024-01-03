@@ -30,3 +30,13 @@ Regularization's Role: Ridge regularization helps control overfitting and stabil
 Gradient Descent's Role: Gradient descent optimizes the model parameters to minimize the overall cost, which includes both the fitting error and the regularization term.
 Balancing Act: The combination of both regularization and gradient descent aims to strike a balance between fitting the data well and preventing overfitting.
 In practice, it's common to use regularization with gradient descent to benefit from both aspects—minimizing fitting error and preventing overfitting. The choice of hyperparameters (like alpha) becomes crucial to finding the right balance for the specific dataset.
+
+
+PCA graph concepts
+
+PCA is a statistical method which can be used to analyze data in higher dimensions
+in two dimensional space (i.e) if we had one,two,three features in our dataset we
+can easily visualize the cluster by drawing 1d,2d,3d graph respectively however if 
+we have more than 3 features we need a higher dimensional graph which we as humans 
+cant visualize hence we need a tool which can map the higher dimensional graph to a more manageable 2d graph t
+he while still preserving to some extent the relations within the dataset such a tool that helps us in this is PCA
